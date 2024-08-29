@@ -242,11 +242,11 @@ Installing CRUX PPC
    conventions please checkout this HOWTO.
 
    Some systems have slower startup CDROM drives and you may need to 
-   specifiy a larger rootdelay than the default.   e.g.  "rootdelay=45"
+   specify a larger rootdelay than the default.   e.g.  "rootdelay=45"
 
    2a.  CRUX PPC can (on most machines) be installed from a USB stick
    rather than a CDROM.  Creating the usb stick and booting it is 
-   described in a seperate document in the cruxppc repository (TBA).
+   described in a separate document in the cruxppc repository (TBA).
 
    3. Login as root (no password required).
 
@@ -264,7 +264,7 @@ Installing CRUX PPC
    useful to review that (and other such documents on the internet) to 
    help figure out  the proper partitioning for your system.
 
-   A simple paritioning for a CRUX PPC system could be as follows:
+   A simple partitioning for a CRUX PPC system could be as follows:
 
    Partition 1:  Apple partition map.
    Partition 2:  800K Apple bootstrap partition.
@@ -481,7 +481,7 @@ Installing CRUX PPC
    /crux/kernel/*config.
 
    15. On Apple computers, edit /etc/yaboot.conf to boot the kernel you  just
-   compiled  and  run  mkofboot  -v  to  install  yaboot  into  the  boostrap
+   compiled  and  run  mkofboot  -v  to  install  yaboot  into  the  bootstrap
    partition, then ybin -v to make the new system bootable.  
 
    A sample.yaboot.conf file can be found under /etc/ and may be useful as
@@ -568,7 +568,7 @@ Installing CRUX PPC
    /proc/bus/usb. We highly recommend you check your fstab file.
 
    9. On Apple computers, edit /etc/yaboot.conf  to boot the kernel you  just
-   compiled  and  run  mkofboot  -v  to  install  yaboot  into  the  boostrap
+   compiled  and  run  mkofboot  -v  to  install  yaboot  into  the  bootstrap
    partition, then ybin -v to make the new system bootable.
 
    10. Remove the CRUX PPC CD-ROM from your drive and reboot from harddisk.
@@ -997,7 +997,7 @@ The Package System
 
    * Do not add  new variables to  the Pkgfile. Only in  very few cases  does
    this actually  improve the  readability  or the  quality of  the  package.
-   Further, the  only  variables  that  are guranteed  to  work  with  future
+   Further, the  only  variables  that  are guaranteed  to  work  with  future
    versions of  pkgmk are  name, version,  release, and  source. Other  names
    could be in conflict with internal variables in pkgmk.
 
@@ -1164,7 +1164,7 @@ The Ports System
    ...
    Finished successfully
 
-   The output reveals which files are downladed, updated and deleted.
+   The output reveals which files are downloaded, updated and deleted.
 
    The user must manually install the -ppc portion of the ports tree as follows:
 
@@ -1284,7 +1284,7 @@ The Ports System
 
       Building ports as unprivileged user
 
-   Normaly building  packages  requires  root-privileges.  This  is  critical
+   Normally building  packages  requires  root-privileges.  This  is  critical
    because a malicious  or badly designed  port can damage  your system.  The
    fakeroot  command  provides  a  way   to  build  ports  as  normal   user.
    Particularly when you  build packages from  user contributed  repositories
@@ -1536,7 +1536,7 @@ Appendix
    password required)". What's wrong?
 
    You most likely forgot to edit  /mnt/etc/fstab before you rebooted or  you
-   entered the wrong name of your new root parition at the boot prompt.
+   entered the wrong name of your new root partition at the boot prompt.
 
   Configuration
 
@@ -1554,6 +1554,6 @@ Appendix
 
    Firefox is extremely sensitive to missing fonts.cache-1 files. If  firefox
    refuses to start (due to  segmentation violation or just silent  permature
-   termination) it is most likely becuase  the font cache files are  missing.
+   termination) it is most likely because  the font cache files are  missing.
    Run  fc-cache  (as  root)  to  create/update  the  cache  files.  See  the
    fc-cache(1) man page for information about this program.
